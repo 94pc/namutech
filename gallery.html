@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>갤러리 - 나무테크</title>
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header" class="main-header">
+    <div class="header-container">
+      <!-- 좌측 로고 (메인페이지 링크) -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo.png" alt="Namutech" class="logo-img" />
+      </a>
+
+      <!-- 중앙 메뉴 (Desktop) -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="about.html" class="nav-link">회사소개</a></li>
+          <li><a href="services.html" class="nav-link">서비스소개</a></li>
+          <li><a href="quote.html" class="nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="nav-link active">갤러리</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 햄버거 메뉴 버튼 -->
+      <button class="mobile-menu-btn" aria-label="메뉴 열기">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+
+    <!-- 모바일 메뉴 오버레이 -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-content">
+        <button class="mobile-menu-close-btn" aria-label="메뉴 닫기">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <ul class="mobile-nav-list">
+          <li><a href="about.html" class="mobile-nav-link">회사소개</a></li>
+          <li><a href="services.html" class="mobile-nav-link">서비스소개</a></li>
+          <li><a href="quote.html" class="mobile-nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link active">갤러리</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 서브페이지 상단 배너 -->
+  <section class="sub-banner gallery-banner">
+    <div class="sub-banner-overlay"></div>
+    <div class="sub-banner-container">
+      <h1>갤러리</h1>
+      <span class="banner-sub">Our Gallery</span>
+    </div>
+  </section>
+
+  <!-- 갤러리 메인 영역 -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      
+      <!-- 카테고리 필터링 탭 버튼 영역 -->
+      <div class="filter-tab-container">
+        <button class="filter-btn active" data-filter="all">전체보기</button>
+        <button class="filter-btn" data-filter="pc">기업 PC / 서버</button>
+        <button class="filter-btn" data-filter="rental">사무용 복합기</button>
+      </div>
+
+      <!-- 포트폴리오 그리드 갤러리 -->
+      <div class="gallery-grid" id="gallery-grid">
+        
+        <!-- 카드 1: 기업 PC 대량 납품 -->
+        <div class="gallery-card" data-category="pc">
+          <div class="card-img-box">
+            <img src="./assets/gallery/work-pc.jpg" alt="기업 업무용 PC 대량 납품">
+            <div class="hover-overlay">
+              <span class="material-symbols-outlined search-icon">zoom_in</span>
+              <p class="overlay-hover-text">사진 크게 보기</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 카드 2: 서버 랙 배선 정리 -->
+        <div class="gallery-card" data-category="pc">
+          <div class="card-img-box">
+            <img src="./assets/gallery/work-server.jpg" alt="IT 서버 룸 전산실 케이블 관리">
+            <div class="hover-overlay">
+              <span class="material-symbols-outlined search-icon">zoom_in</span>
+              <p class="overlay-hover-text">사진 크게 보기</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 카드 4: 컬러 복합기 설치 -->
+        <div class="gallery-card" data-category="rental">
+          <div class="card-img-box">
+            <img src="./assets/gallery/work-printer.jpg" alt="지식산업센터 복합기 정기 렌탈">
+            <div class="hover-overlay">
+              <span class="material-symbols-outlined search-icon">zoom_in</span>
+              <p class="overlay-hover-text">사진 크게 보기</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 이미지 클릭 시 화면에 덮이는 라이트박스(Lightbox) 팝업 모달 -->
+  <div id="lightbox-modal" class="lightbox-overlay hidden">
+    <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="닫기">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+  </div>
+
+  <!-- 공통 푸터 (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- 상단 약관 링크 -->
+      <div class="footer-top-links">
+        <a href="#terms">이용약관</a>
+        <span class="link-divider">|</span>
+        <a href="#privacy" class="highlight">개인정보처리방침</a>
+      </div>
+
+      <!-- 상세 회사 정보 -->
+      <div class="footer-info-content">
+        <h2 class="footer-company-name">나무테크</h2>
+        <div class="footer-info-details">
+          <span>대표자: 장성철</span>
+          <span class="info-divider">|</span>
+          <span>사업자등록번호: 138-12-89981</span>
+          <span class="info-divider">|</span>
+          <span>주소: 경기도 안양시 동안구 시민대로109번길 29 에이스하이테크 지하 2층 b 227호</span>
+        </div>
+        <div class="footer-info-details">
+          <span>고객센터: <a href="tel:0505-557-7500">0505-557-7500</a></span>
+          <span class="info-divider">|</span>
+          <span>이메일: namutech123@naver.com</span>
+        </div>
+        <p class="copyright">Copyright &copy; 2026 나무테크. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 소개 - 나무테크</title>
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header" class="main-header">
+    <div class="header-container">
+      <!-- 좌측 로고 -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo.png" alt="Namutech" class="logo-img" />
+      </a>
+
+      <!-- 중앙 메뉴 (Desktop) -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="about.html" class="nav-link">회사소개</a></li>
+          <li><a href="services.html" class="nav-link active">서비스소개</a></li>
+          <li><a href="quote.html" class="nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="nav-link">갤러리</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 햄버거 메뉴 버튼 -->
+      <button class="mobile-menu-btn" aria-label="메뉴 열기">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+
+    <!-- 모바일 메뉴 오버레이 -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-content">
+        <button class="mobile-menu-close-btn" aria-label="메뉴 닫기">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <ul class="mobile-nav-list">
+          <li><a href="about.html" class="mobile-nav-link">회사소개</a></li>
+          <li><a href="services.html" class="mobile-nav-link active">서비스소개</a></li>
+          <li><a href="quote.html" class="mobile-nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 서브페이지 상단 배너 -->
+  <section class="sub-banner services-banner">
+    <div class="sub-banner-overlay"></div>
+    <div class="sub-banner-container">
+      <h1>서비스 소개</h1>
+      <span class="banner-sub">Our Services</span>
+    </div>
+  </section>
+
+  <!-- 서비스 상세 본문 (지그재그 교차 레이아웃) -->
+  <section class="services-detail-section">
+    <div class="services-detail-container">
+
+      <!-- 1. PC / 서버 유지보수 -->
+      <div class="service-detail-row">
+        <div class="service-detail-image">
+          <img src="./assets/service-pc.png" alt="PC 및 서버 유지보수 서비스 대표 이미지" class="detail-img">
+        </div>
+        <div class="service-detail-text">
+          <span class="service-num">01</span>
+          <h2>PC / 서버 유지보수</h2>
+          <p class="service-summary">
+            체계화된 모니터링과 숙련된 엔지니어 진단을 기반으로 기업의 핵심 업무 시스템 장비(PC, 사무 기기, 서버)를 완벽히 유지·관리합니다.
+          </p>
+          <div class="service-bullets">
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>정기적인 하드웨어 및 OS 정밀 점검</strong>
+                <span>주기적인 예방 점검을 통해 시스템 장애 요인을 선제적으로 차단하고 최상의 장비 성능 상태를 유지합니다.</span>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>실시간 원격 진단 및 신속한 기술 출동</strong>
+                <span>업무 중 장애 발생 시 즉각적인 원격 기술 지원을 제공하며, 현장 처리가 필요한 경우 엔지니어가 신속하게 방문하여 해결합니다.</span>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>대체 장비 무상 대여 서비스</strong>
+                <span>입고 수리가 불가피할 경우, 업무에 공백이 생기지 않도록 고사양 대체 PC 및 모니터를 무상으로 즉각 대여해 드립니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. 사무용 복합기 렌탈 -->
+      <div class="service-detail-row">
+        <div class="service-detail-image">
+          <img src="./assets/service-copier.png" alt="사무용 복합기 렌탈 서비스 대표 이미지" class="detail-img">
+        </div>
+        <div class="service-detail-text">
+          <span class="service-num">02</span>
+          <h2>사무용 복합기 렌탈</h2>
+          <p class="service-summary">
+            초고속 고화질 디지털 복합기 라인업을 합리적인 요금으로 렌탈하고, 토너 등 소모품 보충부터 원격 관리까지 완벽하게 케어해 드립니다.
+          </p>
+          <div class="service-bullets">
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>비즈니스 맞춤형 고성능 장비 제안</strong>
+                <span>귀사의 월 인쇄 매수와 흑백/컬러 작업 비중에 따라 최적의 고효율 레이저 복합기를 합리적인 단가로 셋업합니다.</span>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>복합기 렌탈 시 업무용 PC 무상 유지보수</strong>
+                <span>나무테크만의 독보적인 결합 혜택으로, 복합기 렌탈 계약 시 사무실 내 운용 중인 업무용 PC의 장애 조치 및 기술 지원 서비스를 무상으로 제공합니다.</span>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>정기 점검 및 수명 관리 케어</strong>
+                <span>인쇄 품질 저하나 잦은 용지 걸림을 방지하기 위해 정기적으로 방문하여 부품 클리닝 및 드럼 마모 상태를 세심히 진단합니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. 관공서 장비 교체 -->
+      <div class="service-detail-row">
+        <div class="service-detail-image">
+          <img src="./assets/service-gov.png" alt="관공서 및 기업 대량 장비 교체 서비스 대표 이미지" class="detail-img">
+        </div>
+        <div class="service-detail-text">
+          <span class="service-num">03</span>
+          <h2>관공서 장비 교체</h2>
+          <p class="service-summary">
+            공공기관, 관공서, 학교 및 대규모 사옥의 전산 기기(PC, 노트북, 모니터)를 규정과 절차에 맞춰 대량으로 납품 및 안전하게 교체해 드립니다.
+          </p>
+          <div class="service-bullets">
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>기존 데이터의 안전한 백업 및 마이그레이션</strong>
+                <span>기존 구형 장비에서 사용하던 중요 업무 데이터와 공동인증서, 개인 설정을 유실 없이 안전하게 백업하여 새 전산 장비로 신속하게 이관(마이그레이션)합니다.</span>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>신속한 대량 포설 및 사용자 맞춤 셋업</strong>
+                <span>기관의 고유 보안 프로그램 세팅, 전산망 네트워크 IP 대역 매핑, 그리고 프린터 드라이버 및 드라이브 공유 설정을 한 번에 깔끔하게 수행합니다.</span>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="material-symbols-outlined">check_circle</span>
+              <div class="bullet-desc">
+                <strong>철저한 사후 자산 관리 리포트</strong>
+                <span>작업이 완료된 후 기기 일련번호 매핑 테이블과 교체 전후 증빙 사진을 포함한 투명한 완료 보고서를 상세히 작성하여 전달해 드립니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- 공통 푸터 (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- 상단 약관 링크 -->
+      <div class="footer-top-links">
+        <a href="#terms">이용약관</a>
+        <span class="link-divider">|</span>
+        <a href="#privacy" class="highlight">개인정보처리방침</a>
+      </div>
+
+      <!-- 상세 회사 정보 -->
+      <div class="footer-info-content">
+        <h2 class="footer-company-name">나무테크</h2>
+        <div class="footer-info-details">
+          <span>대표자: 장성철</span>
+          <span class="info-divider">|</span>
+          <span>사업자등록번호: 138-12-89981</span>
+          <span class="info-divider">|</span>
+          <span>주소: 경기도 안양시 동안구 시민대로109번길 29 에이스하이테크 지하 2층 b 227호</span>
+        </div>
+        <div class="footer-info-details">
+          <span>고객센터: <a href="tel:0505-557-7500">0505-557-7500</a></span>
+          <span class="info-divider">|</span>
+          <span>이메일: namutech123@naver.com</span>
+        </div>
+        <p class="copyright">Copyright &copy; 2026 나무테크. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>

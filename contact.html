@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT US - 나무테크</title>
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header" class="main-header">
+    <div class="header-container">
+      <!-- 좌측 로고 (메인페이지 링크) -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo.png" alt="Namutech" class="logo-img" />
+      </a>
+
+      <!-- 중앙 메뉴 (Desktop) -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="about.html" class="nav-link">회사소개</a></li>
+          <li><a href="services.html" class="nav-link">서비스소개</a></li>
+          <li><a href="quote.html" class="nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="nav-link">갤러리</a></li>
+          <li><a href="contact.html" class="nav-link active">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 햄버거 메뉴 버튼 -->
+      <button class="mobile-menu-btn" aria-label="메뉴 열기">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+
+    <!-- 모바일 메뉴 오버레이 -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-content">
+        <button class="mobile-menu-close-btn" aria-label="메뉴 닫기">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <ul class="mobile-nav-list">
+          <li><a href="about.html" class="mobile-nav-link">회사소개</a></li>
+          <li><a href="services.html" class="mobile-nav-link">서비스소개</a></li>
+          <li><a href="quote.html" class="mobile-nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+          <li><a href="contact.html" class="mobile-nav-link active">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 서브페이지 상단 배너 -->
+  <section class="sub-banner contact-banner">
+    <div class="sub-banner-overlay"></div>
+    <div class="sub-banner-container">
+      <h1>CONTACT US</h1>
+      <span class="banner-sub">Get in Touch</span>
+    </div>
+  </section>
+
+  <!-- CONTACT 메인 레이아웃 영역 -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-split-layout">
+        
+        <!-- 좌측: 직접 소통 채널 카드 -->
+        <div class="contact-channels">
+          <h2 class="contact-sub-title">실시간 문의 및 상담 채널</h2>
+          <p class="contact-sub-desc">다양한 상담 채널이 준비되어 있습니다. 편하신 수단으로 문의해 주시면 신속히 답변드리겠습니다.</p>
+          
+          <div class="channel-list">
+            <!-- 1. 카카오톡 상담 카드 -->
+            <div class="channel-card">
+              <div class="channel-icon-box kakaotalk-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" class="kakaotalk-svg">
+                  <path fill="#3C1E1E" d="M12 3c-5.523 0-10 3.58-10 8 0 2.87 1.88 5.378 4.7 6.822l-1.18 4.343c-.114.417.362.748.718.512l5.122-3.41c.21.022.422.033.64.033 5.523 0 10-3.58 10-8s-4.477-8-10-8z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <h3>카카오톡 1:1 상담</h3>
+                <p class="channel-detail">카카오톡 채널 '나무테크' 추가 후 1:1 채팅 문의</p>
+                <a href="http://pf.kakao.com/_xgxiEiX" target="_blank" class="channel-link">상담 연결하기 <span class="material-symbols-outlined">arrow_forward</span></a>
+              </div>
+            </div>
+
+            <!-- 2. 이메일 문의 카드 -->
+            <div class="channel-card">
+              <div class="channel-icon-box">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div class="channel-info">
+                <h3>이메일 문의</h3>
+                <p class="channel-detail"><a href="mailto:namutech123@naver.com">namutech123@naver.com</a></p>
+                <p class="channel-subtext">공식 문서 송부 및 상세 대량 견적 자료 접수용</p>
+              </div>
+            </div>
+
+            <!-- 3. 매장 연락처 카드 -->
+            <div class="channel-card">
+              <div class="channel-icon-box">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <div class="channel-info">
+                <h3>매장 대표 연락처</h3>
+                <p class="channel-detail"><a href="tel:0505-557-7500">0505-557-7500</a></p>
+                <p class="channel-subtext">운영시간: 평일 09:00 ~ 18:00 (토/일요일, 공휴일 휴무)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 우측: 원격요청 분리 안내 카드 -->
+        <div class="contact-remote">
+          <div class="remote-support-card">
+            <div class="remote-header">
+              <span class="material-symbols-outlined remote-main-icon">desktop_windows</span>
+              <h2 class="remote-title">원격 기술지원 서비스</h2>
+            </div>
+            
+            <div class="remote-info-body">
+              <div class="remote-meta-row">
+                <span class="meta-label">지원 프로그램</span>
+                <span class="meta-value highlight-value">헬프유 (HelpU)</span>
+              </div>
+              <div class="remote-meta-row">
+                <span class="meta-label">접속 주소</span>
+                <span class="meta-value">367.co.kr</span>
+              </div>
+              
+              <!-- 원격 접속 액션 버튼 -->
+              <a href="http://367.co.kr" target="_blank" class="remote-action-btn">
+                <span>원격지원 주소(367.co.kr) 바로가기</span>
+                <span class="material-symbols-outlined">open_in_new</span>
+              </a>
+
+              <!-- 접속 가이드 3단계 -->
+              <div class="remote-guide-section">
+                <h3>원격 접속 방법 안내</h3>
+                <ol class="remote-guide-list">
+                  <li>
+                    <span class="guide-num">01</span>
+                    <p>위의 <strong>'바로가기' 버튼</strong>을 클릭하여 원격 접속 페이지(`367.co.kr`)로 이동합니다.</p>
+                  </li>
+                  <li>
+                    <span class="guide-num">02</span>
+                    <p>상담 엔지니어가 안내해 드리는 <strong>원격인증암호 6자리 숫자</strong>를 빈칸에 입력 후 <strong>입력하기 버튼</strong>을 클릭해 주세요.</p>
+                  </li>
+                  <li>
+                    <span class="guide-num">03</span>
+                    <p><strong>입력하기 버튼</strong> 클릭 후 다운로드된 프로그램 실행 파일(<strong>' .exe '</strong>)을 실행(열기)하면 실시간 원격제어가 개시됩니다.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 공통 푸터 (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- 상단 약관 링크 -->
+      <div class="footer-top-links">
+        <a href="#terms">이용약관</a>
+        <span class="link-divider">|</span>
+        <a href="#privacy" class="highlight">개인정보처리방침</a>
+      </div>
+
+      <!-- 상세 회사 정보 -->
+      <div class="footer-info-content">
+        <h2 class="footer-company-name">나무테크</h2>
+        <div class="footer-info-details">
+          <span>대표자: 장성철</span>
+          <span class="info-divider">|</span>
+          <span>사업자등록번호: 138-12-89981</span>
+          <span class="info-divider">|</span>
+          <span>주소: 경기도 안양시 동안구 시민대로109번길 29 에이스하이테크 지하 2층 b 227호</span>
+        </div>
+        <div class="footer-info-details">
+          <span>고객센터: <a href="tel:0505-557-7500">0505-557-7500</a></span>
+          <span class="info-divider">|</span>
+          <span>이메일: namutech123@naver.com</span>
+        </div>
+        <p class="copyright">Copyright &copy; 2026 나무테크. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>

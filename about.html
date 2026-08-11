@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사업장 소개 - 나무테크</title>
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header id="header" class="main-header">
+    <div class="header-container">
+      <!-- 좌측 로고 (메인페이지 링크) -->
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo.png" alt="Namutech" class="logo-img" />
+      </a>
+
+      <!-- 중앙 메뉴 (Desktop) -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="about.html" class="nav-link active">회사소개</a></li>
+          <li><a href="services.html" class="nav-link">서비스소개</a></li>
+          <li><a href="quote.html" class="nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="nav-link">갤러리</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 햄버거 메뉴 버튼 -->
+      <button class="mobile-menu-btn" aria-label="메뉴 열기">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+
+    <!-- 모바일 메뉴 오버레이 -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-content">
+        <button class="mobile-menu-close-btn" aria-label="메뉴 닫기">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <ul class="mobile-nav-list">
+          <li><a href="about.html" class="mobile-nav-link active">회사소개</a></li>
+          <li><a href="services.html" class="mobile-nav-link">서비스소개</a></li>
+          <li><a href="quote.html" class="mobile-nav-link">견적문의</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 서브페이지 상단 배너 -->
+  <section class="sub-banner about-banner">
+    <div class="sub-banner-overlay"></div>
+    <div class="sub-banner-container">
+      <h1>회사소개</h1>
+      <span class="banner-sub">About Us</span>
+    </div>
+  </section>
+
+  <!-- [섹션 1] 회사 소개 -->
+  <section class="about-section-wrap">
+    <div class="about-section-container">
+      <!-- 회사 소개 본문 (1열 와이드 구조) -->
+      <div class="about-intro-full-text">
+        <p class="lead-vision-text">
+          10년의 신뢰와 축적된 기술력을 바탕으로 최적의 기업 IT 인프라 솔루션을 제안합니다.
+        </p>
+        <p>
+          나무테크는 2014년 첫발을 내디딘 이래, 경기도 안양시를 거점으로 10년이 넘는 시간 동안 관공서와 기업체의 IT 인프라를 지탱해 온 전문 기술 파트너입니다.
+        </p>
+        <p>
+          대기업 및 관공서 임직원 전산 장비의 대규모 교체 납품부터 중소기업 PC·서버의 철저한 유지보수, 고성능 디지털 복합기 렌탈 및 신속한 긴급 원격/출동 케어까지 귀사 비즈니스 환경에 가장 합리적이고 완벽한 맞춤 솔루션을 설계해 드립니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- [섹션 2] 경영 방침 및 목표 -->
+  <section class="about-section-wrap" style="padding-top: 60px; padding-bottom: 120px; border-top: none;">
+    <div class="about-section-container">
+      <h3 class="about-section-title center">경영 방침 및 목표</h3>
+      <div class="about-vision-grid">
+        <!-- 고객 CARE -->
+        <div class="about-vision-card">
+          <span class="material-symbols-outlined vision-icon">verified</span>
+          <h4>고객 CARE</h4>
+          <p>전문성과 기술력 노하우가 담긴 맞춤형 서비스를 제공합니다.</p>
+        </div>
+        <!-- 기술인력 양성 -->
+        <div class="about-vision-card">
+          <span class="material-symbols-outlined vision-icon">groups</span>
+          <h4>기술인력 양성</h4>
+          <p>적정 기술 인력 확보 및 지속적인 기술 교육과 투자를 진행합니다.</p>
+        </div>
+        <!-- 인력 및 장비 지원 -->
+        <div class="about-vision-card">
+          <span class="material-symbols-outlined vision-icon">support_agent</span>
+          <h4>인력 및 장비 지원</h4>
+          <p>서비스 활동에 필요한 자원을 아끼지 않아 CS 품질을 극대화합니다.</p>
+        </div>
+        <!-- 보안의식 강화 -->
+        <div class="about-vision-card">
+          <span class="material-symbols-outlined vision-icon">security</span>
+          <h4>보안의식 강화</h4>
+          <p>직원들의 철저한 보안의식으로 고객사 자산을 안전하게 보호합니다.</p>
+        </div>
+        <!-- 최적의 협력 체계 -->
+        <div class="about-vision-card">
+          <span class="material-symbols-outlined vision-icon">handshake</span>
+          <h4>최적의 협력 체계</h4>
+          <p>완벽한 협력사로서 안정적인 유지보수 지원체계를 차질 없이 수행합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [섹션 2] 본사 정보 & 찾아오시는 길 -->
+  <section class="about-section-wrap">
+    <div class="about-section-container">
+      <div class="about-location-grid">
+        <!-- 좌측: 본사 상세 정보 테이블 -->
+        <div class="info-table-box" style="margin-top: 36px;">
+          <h3 class="about-section-title">본사 상세 정보</h3>
+          <table class="company-info-table" style="background-color: var(--dark-bg);">
+            <tbody>
+              <tr>
+                <th>상호명</th>
+                <td>나무테크</td>
+              </tr>
+              <tr>
+                <th>대표자</th>
+                <td>장성철</td>
+              </tr>
+              <tr>
+                <th>설립일</th>
+                <td>2014. 09</td>
+              </tr>
+              <tr>
+                <th>소재지</th>
+                <td>경기도 안양시 동안구 시민대로109번길 29 에이스하이테크 지하 2층 b 227호</td>
+              </tr>
+              <tr>
+                <th>연락처</th>
+                <td><a href="tel:0505-557-7500" class="phone-link">0505-557-7500</a></td>
+              </tr>
+              <tr>
+                <th>주요 사업</th>
+                <td>기업체 IT 유지보수(PC/서버), 사무용 복합기 렌탈, 전산 장비 대량 교체 납품</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 우측: 지도 영역 -->
+        <div class="about-map-area">
+          <div class="map-wrapper">
+            <img src="./assets/about-map.png" alt="나무테크 안양 본사 지도 위치 인포그래픽" class="sub-map-img">
+          </div>
+          <div class="map-caption" style="margin-top: 12px;">
+            <span class="material-symbols-outlined">location_on</span>
+            <span>수도권 및 중부권역 전산망 긴급 출동 지원 거점 (안양 본사)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [섹션 3] 연혁 및 계약 진행 -->
+  <section class="about-section-wrap about-history-section bg-light">
+    <div class="about-section-container" style="max-width: 900px;">
+      <h3 class="about-section-title center">연혁 및 계약 진행</h3>
+      <table class="company-info-table">
+        <tbody>
+          <tr>
+            <th style="width: 120px;">2021년</th>
+            <td>(주)한샘서비스, (주)하이텍환경 유지보수 및 납품 계약</td>
+          </tr>
+          <tr>
+            <th>2020년</th>
+            <td>(주)제이씨코리아 IT 인프라 유지보수 계약</td>
+          </tr>
+          <tr>
+            <th>2018년</th>
+            <td>(주)한성컴퓨터 공식 서비스 지정 대행 계약</td>
+          </tr>
+          <tr>
+            <th>2017년</th>
+            <td>한국반도체산업협회 IT 시스템 유지보수 파트너 지정</td>
+          </tr>
+          <tr>
+            <th>2016년</th>
+            <td>(주)패션랜드 IT 자산 유지보수 및 하드웨어 납품</td>
+          </tr>
+          <tr>
+            <th>2015년</th>
+            <td>(주)경인엔지니어링 IT 장비 유지보수 및 납품</td>
+          </tr>
+          <tr>
+            <th>2014년</th>
+            <td>
+              나무테크 설립<br>
+              삼성전자 로지텍, (주)다나와컴퓨터, (주)에이치앤아이디지탈 공식 서비스 지정
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- [섹션 4] 주요 파트너십 및 실적 -->
+  <section class="about-section-wrap">
+    <div class="about-section-container">
+      <h3 class="about-section-title center">주요 파트너십 및 실적</h3>
+      
+      <div class="about-partners-grid">
+        <!-- 삼성 계열사 -->
+        <div class="partner-flat-card">
+          <h4>삼성 계열사</h4>
+          <p class="partner-sub">2014년 ~ 현재 진행 중</p>
+          <div class="partner-flat-list">
+            <div class="partner-flat-item"><strong>삼성화재</strong> 임직원 PC/노트북/모니터 교체</div>
+            <div class="partner-flat-item"><strong>삼성애니카 / 삼성화재 서비스</strong> 대규모 교체</div>
+            <div class="partner-flat-item"><strong>제일기획</strong> 본사 임직원 업무 장비 교체</div>
+            <div class="partner-flat-item"><strong>삼성전자 등 계열사</strong> PC S/W 마스터링</div>
+          </div>
+        </div>
+
+        <!-- 제조사 공식 대행 -->
+        <div class="partner-flat-card">
+          <h4>공식 대행 & 파트너</h4>
+          <p class="partner-sub">안양 공식 지정점</p>
+          <div class="partner-flat-list">
+            <div class="partner-flat-item"><strong>다나와컴퓨터</strong> 공식 인증센터 운영</div>
+            <div class="partner-flat-item">검증된 투명 단가 및 신뢰성 높은 A/S</div>
+            <div class="partner-flat-item"><strong>한성컴퓨터 / 다나와</strong> A/S 대행 서비스</div>
+            <div class="partner-flat-item">기업 맞춤형 조립 PC 설계 및 공급</div>
+          </div>
+        </div>
+
+        <!-- 기업체 및 협회 -->
+        <div class="partner-flat-card">
+          <h4>기업체 & 공공 협회</h4>
+          <p class="partner-sub">IT 인프라 파트너</p>
+          <div class="partner-flat-list">
+            <div class="partner-flat-item"><strong>한국반도체산업협회</strong> 본체 납품/유지보수</div>
+            <div class="partner-flat-item"><strong>한샘서비스</strong> 전국망 유지보수 협약</div>
+            <div class="partner-flat-item"><strong>패션랜드</strong> 본체 공급 및 라이선스 관리</div>
+            <div class="partner-flat-item"><strong>제이씨코리아 / 하이텍환경</strong> 자산 관리</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 공통 푸터 (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- 상단 약관 링크 -->
+      <div class="footer-top-links">
+        <a href="#terms">이용약관</a>
+        <span class="link-divider">|</span>
+        <a href="#privacy" class="highlight">개인정보처리방침</a>
+      </div>
+
+      <!-- 상세 회사 정보 -->
+      <div class="footer-info-content">
+        <h2 class="footer-company-name">나무테크</h2>
+        <div class="footer-info-details">
+          <span>대표자: 장성철</span>
+          <span class="info-divider">|</span>
+          <span>사업자등록번호: 138-12-89981</span>
+          <span class="info-divider">|</span>
+          <span>주소: 경기도 안양시 동안구 시민대로109번길 29 에이스하이테크 지하 2층 b 227호</span>
+        </div>
+        <div class="footer-info-details">
+          <span>고객센터: <a href="tel:0505-557-7500">0505-557-7500</a></span>
+          <span class="info-divider">|</span>
+          <span>이메일: namutech123@naver.com</span>
+        </div>
+        <p class="copyright">Copyright &copy; 2026 나무테크. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
