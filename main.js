@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeErrorBtn = document.getElementById('close-error-btn');
 
   // [중요] 구글 스프레드시트 Apps Script 배포 후 발급받은 '웹 앱 URL'을 아래 홀더에 입력해 주세요.
-  const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzUCJvih5yvkyNvXhtEjnP4mvHeUL50tJoOa1FJA4-nyzvkARkGhPH6hRl17WKHPvsp/exec'; 
+  const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyqHz15cjRKEjHP-_Yrsjz2eDoHYDvXROdTyL8uY58WnMYRas-zy9airnwcDfI47jZo/exec'; 
 
   quoteForm.addEventListener('submit', async (e) => {
     e.preventDefault();
