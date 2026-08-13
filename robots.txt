@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap URL (호스팅 연결 후 실제 도메인 주소로 연결됨)
-Sitemap: https://namutech.co.kr/sitemap.xml
+Sitemap: https://namutech.kr/sitemap.xml
